@@ -83,8 +83,64 @@ const Index = () => {
       <Navigation />
       <HeroSection />
 
+      {/* Why Work With Synergy Section */}
+      <section className="section-padding">
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <Badge variant="secondary" className="mb-6 px-4 py-2 text-sm font-medium">
+              Why Choose Us
+            </Badge>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+              Why Work with{" "}
+              <span className="gradient-text">Synergy?</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              We provide unmatched expertise and personalized support to ensure your India expansion is successful from day one.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8">
+            <Card className="hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-8">
+                <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center mb-6">
+                  <Shield className="h-6 w-6 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold mb-4">Local Expertise</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Deep understanding of Indian business culture, regulations, and market dynamics with over a decade of experience.
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-8">
+                <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center mb-6">
+                  <Zap className="h-6 w-6 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold mb-4">End-to-End Support</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  From incorporation to ongoing operations, we handle every aspect of your India journey with comprehensive support.
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-8">
+                <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center mb-6">
+                  <TrendingUp className="h-6 w-6 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold mb-4">Proven Results</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  98% success rate with clients achieving their expansion goals and scaling operations efficiently in India.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
-      <section id="services" className="section-padding">
+      <section id="services" className="section-padding bg-gradient-subtle">
         <div className="container-custom">
           <div className="text-center mb-16">
             <Badge variant="secondary" className="mb-6 px-4 py-2 text-sm font-medium">
@@ -169,101 +225,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section id="testimonials" className="section-padding">
-        <div className="container-custom">
-          <div className="text-center mb-16">
-            <Badge variant="secondary" className="mb-6 px-4 py-2 text-sm font-medium">
-              Client Success Stories
-            </Badge>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              What Our Clients{" "}
-              <span className="gradient-text">Say About Us</span>
-            </h2>
-          </div>
-
-          <div className="grid lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial) => (
-              <Card key={testimonial.name} className="hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-8">
-                  <div className="flex gap-1 mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                  <blockquote className="text-foreground italic mb-6 leading-relaxed">
-                    "{testimonial.text}"
-                  </blockquote>
-                  <div>
-                    <div className="font-semibold text-foreground">{testimonial.name}</div>
-                    <div className="text-sm text-muted-foreground">{testimonial.company}</div>
-                    <div className="text-sm text-primary font-medium">{testimonial.country}</div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Why Work With Synergy Section */}
-      <section className="section-padding">
-        <div className="container-custom">
-          <div className="text-center mb-16">
-            <Badge variant="secondary" className="mb-6 px-4 py-2 text-sm font-medium">
-              Why Choose Us
-            </Badge>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              Why Work with{" "}
-              <span className="gradient-text">Synergy?</span>
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              We provide unmatched expertise and personalized support to ensure your India expansion is successful from day one.
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-3 gap-8">
-            <Card className="hover:shadow-xl transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center mb-6">
-                  <Shield className="h-6 w-6 text-white" />
-                </div>
-                <h3 className="text-xl font-semibold mb-4">Local Expertise</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Deep understanding of Indian business culture, regulations, and market dynamics with over a decade of experience.
-                </p>
-              </CardContent>
-            </Card>
-            
-            <Card className="hover:shadow-xl transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center mb-6">
-                  <Zap className="h-6 w-6 text-white" />
-                </div>
-                <h3 className="text-xl font-semibold mb-4">End-to-End Support</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  From incorporation to ongoing operations, we handle every aspect of your India journey with comprehensive support.
-                </p>
-              </CardContent>
-            </Card>
-            
-            <Card className="hover:shadow-xl transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center mb-6">
-                  <TrendingUp className="h-6 w-6 text-white" />
-                </div>
-                <h3 className="text-xl font-semibold mb-4">Proven Results</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  98% success rate with clients achieving their expansion goals and scaling operations efficiently in India.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* How It Works Section */}
-      <section className="section-padding bg-gradient-subtle">
+      <section className="section-padding">
         <div className="container-custom">
           <div className="text-center mb-16">
             <Badge variant="secondary" className="mb-6 px-4 py-2 text-sm font-medium">
@@ -318,6 +281,43 @@ const Index = () => {
                 Continuous CFO services, compliance management, and growth advisory as you scale.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section id="testimonials" className="section-padding bg-gradient-subtle">
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <Badge variant="secondary" className="mb-6 px-4 py-2 text-sm font-medium">
+              Client Success Stories
+            </Badge>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+              What Our Clients{" "}
+              <span className="gradient-text">Say About Us</span>
+            </h2>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8">
+            {testimonials.map((testimonial) => (
+              <Card key={testimonial.name} className="hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-8">
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+                  <blockquote className="text-foreground italic mb-6 leading-relaxed">
+                    "{testimonial.text}"
+                  </blockquote>
+                  <div>
+                    <div className="font-semibold text-foreground">{testimonial.name}</div>
+                    <div className="text-sm text-muted-foreground">{testimonial.company}</div>
+                    <div className="text-sm text-primary font-medium">{testimonial.country}</div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
