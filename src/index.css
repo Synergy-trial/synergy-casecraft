@@ -2,41 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Synergy India Solutions Design System - Based on Repo 1 Color Palette */
 
 @layer base {
   :root {
+    /* Core Brand Colors from Synergy */
+    --primary: 207 73% 37%; /* #1164B4 - Primary Blue */
+    --primary-foreground: 0 0% 100%;
+    --primary-green: 168 93% 34%; /* #0DAD8D */
+    --primary-light: 167 50% 69%; /* #8DD8CC - Light Blue */
+    
+    /* Text Colors */
+    --text-dark: 178 67% 19%; /* #0D4E4D */
+    --foreground: 178 67% 19%;
+    --text-light: 0 0% 100%;
+    --text-gray: 220 9% 46%; /* #6B7280 */
+    --muted-foreground: 220 9% 46%;
+    
+    /* Background Colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    --bg-light: 210 20% 98%; /* #F8FAFC */
+    --footer-bg: 178 67% 19%; /* #0D4E4D */
+    
+    /* UI Colors */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 178 67% 19%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 178 67% 19%;
+    --secondary: 210 20% 98%;
+    --secondary-foreground: 178 67% 19%;
+    --muted: 210 20% 98%;
+    --accent: 210 20% 98%;
+    --accent-foreground: 178 67% 19%;
+    --border: 220 13% 91%; /* #E5E7EB */
+    --input: 220 13% 91%;
+    --ring: 207 73% 37%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(207 73% 37%), hsl(168 93% 34%));
+    --gradient-hero: linear-gradient(135deg, hsl(207 73% 37%) 0%, hsl(168 93% 34%) 50%, hsl(167 50% 69%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(210 20% 98%) 0%, hsl(0 0% 100%) 100%);
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(13, 78, 77, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(13, 78, 77, 0.1), 0 2px 4px -1px rgba(13, 78, 77, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(13, 78, 77, 0.1), 0 4px 6px -2px rgba(13, 78, 77, 0.05);
+    --shadow-glow: 0 0 40px rgba(17, 100, 180, 0.3);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,41 +75,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --background: 178 67% 19%; /* Footer-bg dark theme */
+    --foreground: 0 0% 100%;
+    --card: 178 67% 19%;
+    --card-foreground: 0 0% 100%;
+    --popover: 178 67% 19%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 167 50% 69%; /* Light blue for dark theme */
+    --primary-foreground: 178 67% 19%;
+    --secondary: 178 50% 25%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 178 50% 25%;
+    --muted-foreground: 220 9% 60%;
+    --accent: 178 50% 25%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 178 50% 25%;
+    --input: 178 50% 25%;
+    --ring: 167 50% 69%;
+    --sidebar-background: 178 67% 19%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 167 50% 69%;
+    --sidebar-primary-foreground: 178 67% 19%;
+    --sidebar-accent: 178 50% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 178 50% 25%;
+    --sidebar-ring: 167 50% 69%;
   }
 }
 
@@ -100,6 +111,64 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  /* Gradient text utility */
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Animation utilities */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Button variants */
+  .btn-hero {
+    @apply bg-gradient-to-r from-primary to-primary-green text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105;
+  }
+
+  .btn-ghost-light {
+    @apply border-2 border-white/20 text-white backdrop-blur-sm hover:bg-white/10 px-8 py-4 rounded-xl font-semibold transition-all duration-300;
+  }
+
+  /* Section spacing */
+  .section-padding {
+    @apply py-20 lg:py-32;
+  }
+
+  /* Container max widths */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 }
