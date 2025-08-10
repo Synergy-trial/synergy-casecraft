@@ -272,7 +272,7 @@ const Services = () => {
             <Button 
               asChild 
               size="lg"
-              className="bg-white text-primary hover:bg-white/90 font-semibold"
+              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black font-semibold transition-all duration-300"
             >
               <a href="https://calendly.com/ambarmehta13" target="_blank" rel="noopener noreferrer">
                 Book Consultation
