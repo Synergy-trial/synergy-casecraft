@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -22,9 +23,9 @@ const Services = () => {
 
   const services = [
     {
-      id: "incorporation",
+      id: 1,
       icon: Building2,
-      title: "India Incorporation",
+      title: "Operational Excellence",
       description: "Complete legal entity setup with comprehensive support for all incorporation requirements in India.",
       features: [
         "Entity Structure Consultation",
@@ -43,9 +44,9 @@ const Services = () => {
       highlight: "Most Popular"
     },
     {
-      id: "virtual-cfo",
+      id: 2,
       icon: Calculator,
-      title: "Virtual CFO Services",
+      title: "Business Strategy",
       description: "Comprehensive financial management and compliance support for your India operations.",
       features: [
         "Monthly Accounting",
@@ -225,15 +226,31 @@ const Services = () => {
                       </div>
                     )}
 
-                    <Button 
-                      asChild 
-                      className="w-full bg-gradient-primary hover:shadow-lg transition-all group"
-                    >
-                      <a href="/contact">
-                        Learn More
-                        <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                      </a>
-                    </Button>
+                    {service.id === 1 ? (
+                      <Link to="/services/operational-excellence">
+                        <Button className="w-full bg-gradient-primary hover:shadow-lg transition-all group">
+                          Learn More
+                          <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                        </Button>
+                      </Link>
+                    ) : service.id === 2 ? (
+                      <Link to="/services/business-strategy">
+                        <Button className="w-full bg-gradient-primary hover:shadow-lg transition-all group">
+                          Learn More
+                          <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                        </Button>
+                      </Link>
+                    ) : (
+                      <Button 
+                        asChild 
+                        className="w-full bg-gradient-primary hover:shadow-lg transition-all group"
+                      >
+                        <a href="/contact">
+                          Learn More
+                          <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                        </a>
+                      </Button>
+                    )}
                   </CardContent>
                 </Card>
               );
