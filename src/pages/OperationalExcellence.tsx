@@ -187,7 +187,7 @@ const OperationalExcellence = () => {
               Let's discuss how our operational excellence framework can drive measurable improvements in your business.
             </p>
             <Link to="/contact">
-              <Button size="lg" variant="secondary" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-300">
+              <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
                 Schedule a Consultation
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>

@@ -201,9 +201,9 @@ const Contact = () => {
                   <p className="text-white/90 mb-6 leading-relaxed">
                     Book a free 30-minute consultation with our India expansion experts to discuss your specific needs.
                   </p>
-                   <Button 
+                  <Button 
                     asChild 
-                    className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black font-semibold transition-all duration-300"
+                    className="bg-white text-primary hover:bg-white/90 font-semibold"
                   >
                     <a href="https://calendly.com/ambarmehta13" target="_blank" rel="noopener noreferrer">
                       Book Now
