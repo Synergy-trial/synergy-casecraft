@@ -158,9 +158,7 @@
     @apply bg-gradient-to-r from-primary to-primary-green text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105;
   }
 
-  .btn-ghost-light {
-    @apply bg-transparent border-2 border-white/30 text-white backdrop-blur-sm hover:bg-white hover:text-primary hover:border-white px-8 py-4 rounded-xl font-semibold transition-all duration-300;
-  }
+ .btn-ghost-light { @apply bg-transparent border-2 border-white/30 text-white backdrop-blur-sm hover:bg-white hover:text-black hover:border-white px-8 py-4 rounded-xl font-semibold transition-all duration-300; }
 
   /* Section spacing */
   .section-padding {
