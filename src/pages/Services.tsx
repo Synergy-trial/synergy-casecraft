@@ -281,9 +281,8 @@ const Services = () => {
             </Button>
             <Button 
               asChild 
-              variant="outline" 
               size="lg"
-              className="border-white text-white hover:bg-white/10"
+              className="btn-ghost-light"
             >
               <a href="/contact">
                 Get Quote

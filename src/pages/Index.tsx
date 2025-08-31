@@ -401,9 +401,8 @@ const Index = () => {
               </Button>
               <Button 
                 asChild 
-                variant="outline" 
                 size="lg"
-                className="border-white text-white hover:bg-white hover:text-primary"
+                className="btn-ghost-light"
               >
                 <a href="/contact">
                   Get in Touch

@@ -41,7 +41,6 @@ const HeroSection = () => {
               </Button>
               
               <Button 
-                variant="outline" 
                 size="lg"
                 asChild
                 className="btn-ghost-light"
