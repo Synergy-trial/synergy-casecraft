@@ -72,8 +72,8 @@ const Index = () => {
   ];
 
   const stats = [
-    { icon: Award, number: "50+", label: "Companies Served" },
-    { icon: Globe, number: "15+", label: "Countries" },
+    { icon: Award, number: "10+", label: "Companies Served" },
+    { icon: Globe, number: "5+", label: "Countries" },
     { icon: TrendingUp, number: "98%", label: "Success Rate" },
     { icon: Shield, number: "100%", label: "Compliance" }
   ];
