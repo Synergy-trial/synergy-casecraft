@@ -24,20 +24,20 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      value: "hello@synergyindia.com",
+      value: "sales@synergyindia.com",
       description: "We typically respond within 24 hours"
     },
     {
       icon: Phone,
       title: "Call Us",
-      value: "+91 98765 43210",
+      value: "+91 9619525418",
       description: "Monday to Friday, 9 AM - 6 PM IST"
     },
     {
       icon: MapPin,
       title: "Visit Us",
-      value: "Mumbai, Delhi, Bangalore",
-      description: "Multiple office locations across India"
+      value: "Mumbai",
+      description: "103 B Wing Eastern Court, Parleshwar extension road, Vile Parle East, 400057"
     },
     {
       icon: Clock,
