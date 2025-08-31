@@ -13,9 +13,6 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
           <div className="space-y-8 animate-slide-up">
-            <div className="inline-flex hidden items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium text-white border border-white/20">
-              🇮🇳 India Entry Specialists
-            </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
               Simplifying India for{" "}
@@ -28,7 +25,7 @@ const HeroSection = () => {
               Comprehensive corporate, tax, HR & compliance solutions tailored for international companies entering or expanding in India. Navigate complex regulations with confidence.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className=" flex flex-col sm:flex-row gap-4">
               <Button 
                 asChild 
                 size="lg"
