@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
-          <div className="space-y-8 animate-slide-up padding-top: 20px
+          <div className="space-y-8 animate-slide-up padding-top: 2000px
       padding-bottom: 20px">
             <div> </div>
             
@@ -51,9 +51,9 @@ const HeroSection = () => {
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex items-center gap-8 pt-8">
+            <div className="flex items-center gap-8 pt-8 padding-bottom: 200x">
               <div className="text-center">
-                <div className="text-2xl font-bold text-white">50+</div>
+                <div className="text-2xl font-bold text-white">10+</div>
                 <div className="text-sm text-white/70">Companies Served</div>
               </div>
               <div className="text-center">
@@ -61,7 +61,7 @@ const HeroSection = () => {
                 <div className="text-sm text-white/70">Success Rate</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-white">15+</div>
+                <div className="text-2xl font-bold text-white">5+</div>
                 <div className="text-sm text-white/70">Countries</div>
               </div>
             </div>
