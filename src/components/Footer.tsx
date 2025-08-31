@@ -19,7 +19,7 @@ const Footer = () => {
               Comprehensive corporate, tax, HR & compliance solutions for global businesses expanding into India.
             </p>
             <div className="flex gap-4">
-              <Button variant="ghost" size="icon" className="text-white hover:text-primary-light hover:bg-white/10">
+{/*               <Button variant="ghost" size="icon" className="text-white hover:text-primary-light hover:bg-white/10">
                 <Linkedin className="h-5 w-5" />
               </Button>
               <Button variant="ghost" size="icon" className="text-white hover:text-primary-light hover:bg-white/10">
@@ -27,7 +27,7 @@ const Footer = () => {
               </Button>
               <Button variant="ghost" size="icon" className="text-white hover:text-primary-light hover:bg-white/10">
                 <Youtube className="h-5 w-5" />
-              </Button>
+              </Button> */}
             </div>
           </div>
 
