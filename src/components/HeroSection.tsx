@@ -12,7 +12,8 @@ const HeroSection = () => {
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
-          <div className="space-y-8 animate-slide-up">
+          <div className="space-y-8 animate-slide-up padding-top: 20px
+      padding-bottom: 20px">
             <div> </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
