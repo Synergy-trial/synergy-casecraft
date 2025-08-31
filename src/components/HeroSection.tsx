@@ -74,7 +74,7 @@ const HeroSection = () => {
                 <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:bg-white/15 transition-all duration-300 group">
                   <Globe className="h-8 w-8 text-primary-light mb-4 group-hover:scale-110 transition-transform" />
                   <h3 className="font-semibold text-white mb-2">Global Reach</h3>
-                  <p className="text-white/70 text-sm">Supporting businesses from 10+ countries</p>
+                  <p className="text-white/70 text-sm">Supporting businesses from 5+ countries</p>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:bg-white/15 transition-all duration-300 group mt-8">
                   <Shield className="h-8 w-8 text-primary-light mb-4 group-hover:scale-110 transition-transform" />
