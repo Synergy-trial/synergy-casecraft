@@ -175,7 +175,7 @@ const Services = () => {
 
                     {/* Service-specific content */}
                     {service.entityTypes && (
-                      <div>
+                      <div className="mb-6">
                         <h4 className="font-semibold mb-3 text-foreground">Entity Types We Support:</h4>
                         <div className="grid grid-cols-2 gap-2">
                           {service.entityTypes.map((type) => (
