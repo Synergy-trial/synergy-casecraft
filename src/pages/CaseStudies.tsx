@@ -8,80 +8,61 @@ import { ArrowRight, TrendingUp, DollarSign, Users, Calendar } from "lucide-reac
 const CaseStudies = () => {
   const caseStudies = [
     {
-      id: "tech-startup",
-      title: "US Tech Startup Expansion",
+      id: "netherlands-it",
+      title: "Incorporation & Virtual CFO Services for Netherlands-based IT Company",
       industry: "Technology",
-      duration: "3 months",
-      revenue: "$2M ARR",
-      employees: "25+ hired",
-      description: "Helped a San Francisco-based SaaS company establish their India development center and scale their engineering team.",
-      challenge: "Complex regulatory requirements for setting up a wholly-owned subsidiary and hiring technical talent in India.",
-      solution: "Complete entity setup, regulatory compliance, talent acquisition strategy, and ongoing HR & payroll management.",
+      duration: "Ongoing Engagement",
+      revenue: "USD 120,000 savings",
+      employees: "25+ professionals hired",
+      description: "A Netherlands-based IT company sought to establish an India Development Centre to support its global operations.",
+      challenge: "A Netherlands-based IT company sought to establish an India Development Centre to support its global operations. The project involved navigating India's complex regulatory environment for incorporating a wholly-owned subsidiary, ensuring compliance with corporate, tax, and employment laws, and sourcing highly skilled technical talent in a competitive hiring landscape. The client also required a cost-effective solution for ongoing finance, HR, and compliance management without establishing an expensive in-house team.",
+      solution: "We provided a turnkey incorporation and operational setup package, which included: Complete entity incorporation as a private limited company in compliance with Indian corporate regulations. Designing and implementing HR & payroll structures aligned with Indian labour laws and global policies. Developing a talent acquisition strategy to hire 25+ skilled technical professionals. End-to-end Virtual CFO services, covering GST registration & filing, accounting, statutory audits, and corporate compliance. Implementing an efficient compliance framework to reduce risks and administrative overhead.",
       results: [
-        "Successfully incorporated private limited company",
-        "Hired 25+ engineers within 6 months", 
-        "Achieved $2M ARR from India operations",
-        "100% compliance with local regulations"
+        "Successfully incorporated the India subsidiary ahead of schedule and within budget",
+        "Structured payroll, benefits, and HR policies to ensure smooth operations from Day 1",
+        "Enabled cost savings of USD 120,000 through optimised compliance processes, tax refunds, and avoidance of regulatory penalties",
+        "Provided ongoing strategic and operational support, freeing the client's leadership team to focus on core business growth"
       ],
       testimonial: "Synergy made our India expansion seamless. Their expertise saved us months of regulatory headaches.",
-      client: "TechFlow Solutions"
+      client: "Netherlands-based IT Company"
     },
     {
-      id: "manufacturing",
-      title: "German Manufacturing Entry", 
-      industry: "Manufacturing",
-      duration: "6 months",
-      revenue: "$5M+ contracts",
-      employees: "50+ workforce",
-      description: "Assisted a German industrial equipment manufacturer in establishing manufacturing operations and securing major contracts.",
-      challenge: "Setting up manufacturing facility, import/export compliance, and building local supplier network.",
-      solution: "End-to-end setup including land acquisition, facility setup, import licenses, and vendor sourcing.",
+      id: "us-computer-vision",
+      title: "Export Compliance & Setup for US-based Computer Vision Startup",
+      industry: "Technology",
+      duration: "6 Months",
+      revenue: "USD 20,000 savings",
+      employees: "25+ specialists engaged",
+      description: "A US-based computer vision startup wanted to launch an India-based hardware export business to serve global markets.",
+      challenge: "A US-based computer vision startup wanted to launch an India-based hardware export business to serve global markets. The venture required navigating complex export laws, managing redundant paperwork, obtaining certifications, and meeting country-specific restrictions. Additionally, the client needed to design a manufacturing and logistics system capable of shipping to 20+ countries efficiently while benefiting from available government export incentives.",
+      solution: "We acted as the client's single-point compliance and export setup partner, delivering: DGFT registration, Import-Export Code (IEC), and product certifications. Structuring the entire export logistics chain from manufacturing to last-mile delivery. Collaboration with expert freight and logistics consultants to ensure smooth international shipping to over 20 countries. Applying tax reduction strategies using Indian Government export schemes (zero GST on exports). Securing export-based incentives to improve profitability.",
       results: [
-        "Established 50,000 sq ft manufacturing facility",
-        "Secured $5M+ in initial contracts",
-        "Built network of 20+ local suppliers",
-        "Created 50+ manufacturing jobs"
+        "Successfully set up a compliant export business from scratch in under 6 months",
+        "Enabled tax savings through zero-rated GST on exports and additional government benefits",
+        "Provided end-to-end export compliance services, including documentation, registrations, and freight forwarding",
+        "Established a scalable logistics framework supporting expansion into multiple international markets"
       ],
-      testimonial: "Their logistics expertise and local connections were invaluable for our manufacturing setup.",
-      client: "IndustrieWerk GmbH"
+      testimonial: "Their export compliance expertise helped us navigate complex regulations and launch successfully.",
+      client: "US-based Computer Vision Startup"
     },
     {
-      id: "ecommerce",
-      title: "UK E-commerce Marketplace",
-      industry: "E-commerce", 
-      duration: "4 months",
-      revenue: "$3M+ sales",
-      employees: "30+ team",
-      description: "Supported a UK-based e-commerce platform in launching their India marketplace and building local operations.",
-      challenge: "Complex e-commerce regulations, FDI compliance, payment gateway integration, and local team building.",
-      solution: "Marketplace entity setup, regulatory compliance, payment solutions, warehousing, and team hiring.",
+      id: "us-it-solutions",
+      title: "Subsidiary Incorporation for US-based IT Solutions Company",
+      industry: "Technology",
+      duration: "Ongoing Engagement",
+      revenue: "USD 35,000 savings",
+      employees: "15+ professionals engaged",
+      description: "A US-based IT solutions company needed to establish an India back-office subsidiary to support its software development and support operations.",
+      challenge: "A US-based IT solutions company needed to establish an India back-office subsidiary to support its software development and support operations. The process required FEMA compliance, GST registration and filing, and setting up an operational structure aligned with Indian corporate and labour laws. The client needed an ongoing partner to ensure their India expansion strategy remained fully compliant while minimising operational costs.",
+      solution: "Our team provided comprehensive incorporation and ongoing compliance management, including: Incorporating the India subsidiary and establishing statutory registrations. Advising on FEMA regulations for foreign ownership and cross-border transactions. Designing an operational framework for HR, payroll, and finance. Providing ongoing GST filing, statutory compliance, and financial oversight. Strategic advisory on scaling operations in India in line with global expansion plans.",
       results: [
-        "Successfully launched India marketplace",
-        "Achieved $3M+ in first-year sales",
-        "Onboarded 500+ local sellers",
-        "Built 30-person local team"
+        "Incorporated the India subsidiary quickly, ensuring full regulatory compliance",
+        "Established ongoing compliance processes that reduced administrative burdens",
+        "Enabled USD 35,000 in savings through optimised compliance workflows and avoidance of penalties",
+        "Continuing to provide strategic and operational support to aid smooth scaling in the Indian market"
       ],
-      testimonial: "Synergy's e-commerce expertise helped us navigate complex regulations and launch successfully.",
-      client: "BritShop Ltd"
-    },
-    {
-      id: "healthcare",
-      title: "Swiss MedTech Innovation",
-      industry: "Healthcare",
-      duration: "8 months", 
-      revenue: "$1.5M revenue",
-      employees: "15+ specialists",
-      description: "Enabled a Swiss medical device company to enter the Indian healthcare market with innovative diagnostic solutions.",
-      challenge: "Medical device regulations, clinical trials, hospital partnerships, and specialized talent acquisition.",
-      solution: "Regulatory pathway guidance, clinical trial setup, hospital network development, and expert hiring.",
-      results: [
-        "Obtained medical device approvals", 
-        "Completed clinical trials successfully",
-        "Partnered with 25+ hospitals",
-        "Generated $1.5M in first-year revenue"
-      ],
-      testimonial: "Their healthcare regulatory expertise was crucial for our successful market entry.",
-      client: "MedInnovate AG"
+      testimonial: "Their ongoing compliance support has been crucial for our successful operations in India.",
+      client: "US-based IT Solutions Company"
     }
   ];
 
