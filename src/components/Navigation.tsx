@@ -25,17 +25,14 @@ const Navigation = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? "bg-white/95 backdrop-blur-lg border-b border-border shadow-md" : "bg-transparent"
+      isScrolled ? "bg-white/95 backdrop-blur-lg border-b border-border shadow-sm" : "bg-white"
     }`}>
       <div className="container-custom">
-        <div className="flex justify-between items-center h-18 lg:h-20">
+        <div className="flex justify-between items-center h-16 lg:h-18">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center text-white font-bold text-lg group-hover:scale-110 transition-transform duration-300">
-              ⚡
-            </div>
-            <span className="text-xl lg:text-2xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
-              Synergy India Solutions
+          <Link to="/" className="flex items-center group">
+            <span className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
+              Synergy
             </span>
           </Link>
 
@@ -45,7 +42,7 @@ const Navigation = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`font-medium transition-colors duration-300 hover:text-primary ${
+                className={`font-medium text-sm transition-colors duration-300 hover:text-primary ${
                   location.pathname === item.path
                     ? "text-primary"
                     : "text-foreground"
@@ -56,10 +53,11 @@ const Navigation = () => {
             ))}
             <Button 
               asChild 
-              className="btn-hero ml-4"
+              variant="outline"
+              className="border-2 border-accent bg-transparent text-accent hover:bg-accent hover:text-white rounded-full px-6 py-2 font-medium"
             >
               <a href="https://calendly.com/ambarmehta13" target="_blank" rel="noopener noreferrer">
-                Book Call
+                Contact us
               </a>
             </Button>
           </div>

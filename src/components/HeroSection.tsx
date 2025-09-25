@@ -3,92 +3,71 @@ import { ArrowRight, Globe, TrendingUp, Shield } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary-green/10 to-primary-light/20"></div>
-      <div className="absolute top-20 right-10 w-72 h-72 bg-primary-light/20 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-20 left-10 w-96 h-96 bg-primary-green/20 rounded-full blur-3xl animate-pulse-slow"></div>
+    <section className="relative min-h-screen flex items-center bg-white overflow-hidden pt-20">
+      {/* Decorative Elements */}
+      <div className="absolute top-32 right-20 w-24 h-24 bg-accent/20 rounded-full"></div>
+      <div className="absolute top-60 right-32 w-16 h-16 bg-primary-light/30 rounded-full"></div>
+      <div className="absolute bottom-40 right-80 w-32 h-32 bg-primary-light/20 rounded-full"></div>
+      <div className="absolute bottom-32 right-20 w-20 h-20 bg-accent/30 rounded-full"></div>
       
       <div className="container-custom relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
-          <div className="space-y-8 animate-slide-up padding-top: 2000px
-      padding-bottom: 20px">
-            <div> </div>
+          <div className="space-y-8">
+            <div className="text-sm text-muted-foreground font-medium tracking-wide uppercase">
+              Corporate and advisory services
+            </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
-              Simplifying India for{" "}
-              <span className="gradient-text bg-gradient-to-r from-white to-primary-light bg-clip-text text-transparent">
-                Global Businesses
-              </span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
+              Our business is advancing{" "}
+              <span className="text-primary">yours.</span>
             </h1>
             
-            <p className="text-xl text-white/90 leading-relaxed max-w-2xl">
-              Comprehensive corporate, tax, HR & compliance solutions tailored for international companies entering or expanding in India. Navigate complex regulations with confidence.
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
+              Synergy provides a comprehensive range of professional services and business advisory to help businesses navigate complex regulatory environments and achieve their goals at all stages of the business life‑cycle in India.
             </p>
             
-            <div className=" flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 asChild 
                 size="lg"
-                className="btn-hero group"
+                className="bg-accent hover:bg-accent/90 text-white rounded-full px-8 py-6 font-semibold"
               >
-                <a href="https://calendly.com/ambarmehta13" target="_blank" rel="noopener noreferrer">
-                  Get Started Today
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                <a href="/services">
+                  View services
                 </a>
               </Button>
               
               <Button 
-                size="lg"
                 asChild
-                className="btn-ghost-light"
+                variant="ghost"
+                size="lg"
+                className="text-foreground hover:text-primary underline underline-offset-4 px-8 py-6 font-semibold"
               >
-                <a href="/services">
-                  Explore Services
+                <a href="/case-studies">
+                  View case studies
                 </a>
               </Button>
-            </div>
-
-            {/* Trust Indicators */}
-            <div className="flex items-center gap-8 pt-8 padding-bottom: 200x">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-white">10+</div>
-                <div className="text-sm text-white/70">Companies Served</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-white">98%</div>
-                <div className="text-sm text-white/70">Success Rate</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-white">5+</div>
-                <div className="text-sm text-white/70">Countries</div>
-              </div>
             </div>
           </div>
 
           {/* Visual Elements */}
           <div className="relative">
-            <div className="grid grid-cols-2 gap-6">
-              <div className="space-y-6">
-                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:bg-white/15 transition-all duration-300 group">
-                  <Globe className="h-8 w-8 text-primary-light mb-4 group-hover:scale-110 transition-transform" />
-                  <h3 className="font-semibold text-white mb-2">Global Reach</h3>
-                  <p className="text-white/70 text-sm">Supporting businesses from 5+ countries</p>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:bg-white/15 transition-all duration-300 group mt-8">
-                  <Shield className="h-8 w-8 text-primary-light mb-4 group-hover:scale-110 transition-transform" />
-                  <h3 className="font-semibold text-white mb-2">Compliance</h3>
-                  <p className="text-white/70 text-sm">100% regulatory compliance guarantee</p>
-                </div>
+            {/* Main circular image container */}
+            <div className="relative w-96 h-96 mx-auto">
+              <div className="absolute inset-8 rounded-full overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=800&fit=crop&crop=center"
+                  alt="Modern office building representing business growth"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <div className="space-y-6 mt-12">
-                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20 hover:bg-white/15 transition-all duration-300 group">
-                  <TrendingUp className="h-8 w-8 text-primary-light mb-4 group-hover:scale-110 transition-transform" />
-                  <h3 className="font-semibold text-white mb-2">Growth Focus</h3>
-                  <p className="text-white/70 text-sm">Strategic expansion planning</p>
-                </div>
-              </div>
+              
+              {/* Decorative circles around the main image */}
+              <div className="absolute -top-4 left-20 w-16 h-16 bg-accent rounded-full"></div>
+              <div className="absolute top-20 -right-4 w-20 h-20 bg-primary-light/40 rounded-full"></div>
+              <div className="absolute -bottom-6 left-12 w-12 h-12 bg-primary-light rounded-full"></div>
+              <div className="absolute bottom-16 -left-6 w-24 h-24 bg-accent/30 rounded-full"></div>
             </div>
           </div>
         </div>

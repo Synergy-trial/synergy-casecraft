@@ -83,75 +83,102 @@ const Index = () => {
       <Navigation />
       <HeroSection />
 
-      {/* Why Work With Synergy Section */}
+      {/* Advisory Section */}
       <section className="section-padding">
         <div className="container-custom">
-          <div className="text-center mb-16">
-            <Badge variant="secondary" className="mb-6 px-4 py-2 text-sm font-medium">
-              Why Choose Us
-            </Badge>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              Why Work with{" "}
-              <span className="gradient-text">Synergy?</span>
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground max-w-4xl mx-auto leading-tight">
+              Advisory & corporate services for every part of your journey.
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              We provide unmatched expertise and personalized support to ensure your India expansion is successful from day one.
+            <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+              From establishing an investment vehicle through providing support for cross-border transactions to setting up a fully operational local or regional presence, we will help you make the most out of every incentive and benefit this unique region has to offer. Ask us for solutions, not just advice.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
-            <Card className="hover:shadow-xl transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center mb-6">
-                  <Shield className="h-6 w-6 text-white" />
-                </div>
-                <h3 className="text-xl font-semibold mb-4">Local Expertise</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Deep understanding of Indian business culture, regulations, and market dynamics with over a decade of experience.
-                </p>
-              </CardContent>
-            </Card>
+          <div className="grid lg:grid-cols-5 gap-8 items-start">
+            {/* Research & Planning */}
+            <div className="text-center group">
+              <div className="w-20 h-20 bg-accent rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform">
+                <div className="w-3 h-3 bg-white rounded-full"></div>
+              </div>
+              <h3 className="text-lg font-semibold mb-4 text-foreground">Research & planning</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+                We provide businesses with essential market and regulatory insights for informed decision-making. Our research services reduce uncertainty, guiding you through new markets, assessing risks, and seizing opportunities confidently.
+              </p>
+              <Button variant="ghost" asChild className="text-primary underline underline-offset-4 p-0 h-auto font-semibold">
+                <a href="/services">Learn more</a>
+              </Button>
+            </div>
             
-            <Card className="hover:shadow-xl transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center mb-6">
-                  <Zap className="h-6 w-6 text-white" />
-                </div>
-                <h3 className="text-xl font-semibold mb-4">End-to-End Support</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  From incorporation to ongoing operations, we handle every aspect of your India journey with comprehensive support.
-                </p>
-              </CardContent>
-            </Card>
+            {/* Establishment */}
+            <div className="text-center group">
+              <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform">
+                <div className="w-3 h-3 bg-white rounded-full"></div>
+              </div>
+              <h3 className="text-lg font-semibold mb-4 text-foreground">Establishment</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+                Complete legal entity setup with comprehensive support for all incorporation requirements and regulatory compliance.
+              </p>
+              <Button variant="ghost" asChild className="text-primary underline underline-offset-4 p-0 h-auto font-semibold">
+                <a href="/services">Learn more</a>
+              </Button>
+            </div>
             
-            <Card className="hover:shadow-xl transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center mb-6">
-                  <TrendingUp className="h-6 w-6 text-white" />
-                </div>
-                <h3 className="text-xl font-semibold mb-4">Proven Results</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  98% success rate with clients achieving their expansion goals and scaling operations efficiently in India.
-                </p>
-              </CardContent>
-            </Card>
+            {/* Growth */}
+            <div className="text-center group">
+              <div className="w-20 h-20 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform">
+                <div className="w-3 h-3 bg-white rounded-full"></div>
+              </div>
+              <h3 className="text-lg font-semibold mb-4 text-foreground">Growth</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+                Strategic guidance and operational support to scale your business efficiently in the Indian market.
+              </p>
+              <Button variant="ghost" asChild className="text-primary underline underline-offset-4 p-0 h-auto font-semibold">
+                <a href="/services">Learn more</a>
+              </Button>
+            </div>
+            
+            {/* Expansion */}
+            <div className="text-center group">
+              <div className="w-20 h-20 bg-accent/70 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform">
+                <div className="w-3 h-3 bg-white rounded-full"></div>
+              </div>
+              <h3 className="text-lg font-semibold mb-4 text-foreground">Expansion</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+                Multi-location expansion support with local partnerships and regulatory expertise across India.
+              </p>
+              <Button variant="ghost" asChild className="text-primary underline underline-offset-4 p-0 h-auto font-semibold">
+                <a href="/services">Learn more</a>
+              </Button>
+            </div>
+            
+            {/* Maturity & Exit */}
+            <div className="text-center group">
+              <div className="w-20 h-20 bg-primary/70 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform">
+                <div className="w-3 h-3 bg-white rounded-full"></div>
+              </div>
+              <h3 className="text-lg font-semibold mb-4 text-foreground">Maturity & exit</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+                Strategic exit planning and transaction support for mature businesses looking to maximize value.
+              </p>
+              <Button variant="ghost" asChild className="text-primary underline underline-offset-4 p-0 h-auto font-semibold">
+                <a href="/services">Learn more</a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Professional Services Section */}
       <section id="services" className="section-padding bg-gradient-subtle">
         <div className="container-custom">
-          <div className="text-center mb-16">
-            <Badge variant="secondary" className="mb-6 px-4 py-2 text-sm font-medium">
-              Our Services
-            </Badge>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              Comprehensive Solutions for{" "}
-              <span className="gradient-text">India Expansion</span>
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">
+              Professional services specialist with{" "}
+              <span className="text-primary">global standards.</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              From incorporation to ongoing operations, we provide end-to-end support for your successful India journey.
+            <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+              We combine deep local expertise with international best practices to deliver exceptional results for your India expansion.
             </p>
           </div>
 
