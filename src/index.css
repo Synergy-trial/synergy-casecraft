@@ -6,50 +6,50 @@
 
 @layer base {
   :root {
-    /* Core Brand Colors from Synergy */
-    --primary: 207 73% 37%; /* #1164B4 - Primary Blue */
+    /* Core Brand Colors inspired by Acclime */
+    --primary: 180 100% 15%; /* Deep Teal - Primary */
     --primary-foreground: 0 0% 100%;
-    --primary-green: 168 93% 34%; /* #0DAD8D */
-    --primary-light: 167 50% 69%; /* #8DD8CC - Light Blue */
+    --primary-green: 14 100% 57%; /* Warm Orange - Accent */
+    --primary-light: 180 45% 65%; /* Light Teal - Secondary */
     
     /* Text Colors */
-    --text-dark: 178 67% 19%; /* #0D4E4D */
-    --foreground: 178 67% 19%;
+    --text-dark: 180 100% 15%; /* Deep Teal for text */
+    --foreground: 180 100% 15%;
     --text-light: 0 0% 100%;
     --text-gray: 220 9% 46%; /* #6B7280 */
     --muted-foreground: 220 9% 46%;
     
     /* Background Colors */
     --background: 0 0% 100%;
-    --bg-light: 210 20% 98%; /* #F8FAFC */
-    --footer-bg: 178 67% 19%; /* #0D4E4D */
+    --bg-light: 180 20% 98%; /* Very light teal tint */
+    --footer-bg: 180 100% 15%; /* Deep Teal for footer */
     
     /* UI Colors */
     --card: 0 0% 100%;
-    --card-foreground: 178 67% 19%;
+    --card-foreground: 180 100% 15%;
     --popover: 0 0% 100%;
-    --popover-foreground: 178 67% 19%;
-    --secondary: 210 20% 98%;
-    --secondary-foreground: 178 67% 19%;
-    --muted: 210 20% 98%;
-    --accent: 210 20% 98%;
-    --accent-foreground: 178 67% 19%;
-    --border: 220 13% 91%; /* #E5E7EB */
-    --input: 220 13% 91%;
-    --ring: 207 73% 37%;
+    --popover-foreground: 180 100% 15%;
+    --secondary: 180 20% 98%;
+    --secondary-foreground: 180 100% 15%;
+    --muted: 180 20% 98%;
+    --accent: 14 100% 57%; /* Orange accent */
+    --accent-foreground: 0 0% 100%;
+    --border: 180 15% 91%;
+    --input: 180 15% 91%;
+    --ring: 180 100% 15%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(207 73% 37%), hsl(168 93% 34%));
-    --gradient-hero: linear-gradient(135deg, hsl(207 73% 37%) 0%, hsl(168 93% 34%) 50%, hsl(167 50% 69%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(210 20% 98%) 0%, hsl(0 0% 100%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(180 100% 15%), hsl(14 100% 57%));
+    --gradient-hero: linear-gradient(135deg, hsl(180 100% 15%) 0%, hsl(14 100% 57%) 50%, hsl(180 45% 65%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(180 20% 98%) 0%, hsl(0 0% 100%) 100%);
     
     /* Shadows */
-    --shadow-sm: 0 1px 2px 0 rgba(13, 78, 77, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(13, 78, 77, 0.1), 0 2px 4px -1px rgba(13, 78, 77, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(13, 78, 77, 0.1), 0 4px 6px -2px rgba(13, 78, 77, 0.05);
-    --shadow-glow: 0 0 40px rgba(17, 100, 180, 0.3);
+    --shadow-sm: 0 1px 2px 0 rgba(0, 77, 77, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 77, 77, 0.1), 0 2px 4px -1px rgba(0, 77, 77, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 77, 77, 0.1), 0 4px 6px -2px rgba(0, 77, 77, 0.05);
+    --shadow-glow: 0 0 40px rgba(0, 77, 77, 0.3);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -75,33 +75,33 @@
   }
 
   .dark {
-    --background: 178 67% 19%; /* Footer-bg dark theme */
+    --background: 180 100% 15%; /* Deep teal dark theme */
     --foreground: 0 0% 100%;
-    --card: 178 67% 19%;
+    --card: 180 100% 15%;
     --card-foreground: 0 0% 100%;
-    --popover: 178 67% 19%;
+    --popover: 180 100% 15%;
     --popover-foreground: 0 0% 100%;
-    --primary: 167 50% 69%; /* Light blue for dark theme */
-    --primary-foreground: 178 67% 19%;
-    --secondary: 178 50% 25%;
+    --primary: 180 45% 65%; /* Light teal for dark theme */
+    --primary-foreground: 180 100% 15%;
+    --secondary: 180 50% 25%;
     --secondary-foreground: 0 0% 100%;
-    --muted: 178 50% 25%;
+    --muted: 180 50% 25%;
     --muted-foreground: 220 9% 60%;
-    --accent: 178 50% 25%;
+    --accent: 14 100% 57%; /* Orange accent in dark mode */
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    --border: 178 50% 25%;
-    --input: 178 50% 25%;
-    --ring: 167 50% 69%;
-    --sidebar-background: 178 67% 19%;
+    --border: 180 50% 25%;
+    --input: 180 50% 25%;
+    --ring: 180 45% 65%;
+    --sidebar-background: 180 100% 15%;
     --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 167 50% 69%;
-    --sidebar-primary-foreground: 178 67% 19%;
-    --sidebar-accent: 178 50% 25%;
+    --sidebar-primary: 180 45% 65%;
+    --sidebar-primary-foreground: 180 100% 15%;
+    --sidebar-accent: 180 50% 25%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 178 50% 25%;
-    --sidebar-ring: 167 50% 69%;
+    --sidebar-border: 180 50% 25%;
+    --sidebar-ring: 180 45% 65%;
   }
 }
 
