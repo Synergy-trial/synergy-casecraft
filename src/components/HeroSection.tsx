@@ -15,16 +15,16 @@ const HeroSection = () => {
           {/* Content */}
           <div className="space-y-8">
             <div className="text-sm text-muted-foreground font-medium tracking-wide uppercase">
-              Corporate and advisory services
+              India Entry Consulting Services
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
-              Our business is advancing{" "}
-              <span className="text-primary">yours.</span>
+              Your gateway to{" "}
+              <span className="text-primary">India.</span>
             </h1>
             
             <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
-              Synergy provides a comprehensive range of professional services and business advisory to help businesses navigate complex regulatory environments and achieve their goals at all stages of the business life‑cycle in India.
+              We are a specialized consulting firm that helps international businesses successfully enter and establish operations in India. Navigate complex regulations, compliance requirements, and market entry strategies with our expert guidance.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
